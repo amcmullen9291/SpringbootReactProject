@@ -38,7 +38,15 @@ public class StudentData {
 
     public Student getStudentById(int id){ return this.students.get(id); }
 
-    public void deleteStudentById(int id) {
-        this.students.remove(id);
+    public void deleteStudentById(int id) { this.students.remove(id); }
+
+    public void updateStudent(Student student){
+        Student chosenStudent = students.get(student.getId());
+        chosenStudent.setCourse(student.getCourse());
+        chosenStudent.setFirstName(student.getFirstName());
+        chosenStudent.setLastName(student.getLastName());
+        chosenStudent.setGrade(student.getGrade());
+
+        students.put(student.getId(), chosenStudent);
     }
 }
