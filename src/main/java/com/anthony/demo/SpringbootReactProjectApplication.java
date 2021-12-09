@@ -8,6 +8,7 @@ public class SpringbootReactProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootReactProjectApplication.class, args);
+
 	}
 
 }
