@@ -31,5 +31,8 @@ public class StudentController {
     @RequestMapping(value="/{id}/update", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void updateStudent(@RequestBody Student student){ studentService.updateStudent(student); }
 
+    @RequestMapping(value="/newStudent",method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void addNewStudent(@RequestBody Student student){ studentService.insertStudent(student); }
+
     //@add error messages for bad https
 }

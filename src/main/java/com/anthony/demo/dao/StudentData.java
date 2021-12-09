@@ -42,11 +42,15 @@ public class StudentData {
 
     public void updateStudent(Student student){
         Student chosenStudent = students.get(student.getId());
-        chosenStudent.setCourse(student.getCourse());
         chosenStudent.setFirstName(student.getFirstName());
         chosenStudent.setLastName(student.getLastName());
         chosenStudent.setGrade(student.getGrade());
+        chosenStudent.setCourse(student.getCourse());
 
         students.put(student.getId(), chosenStudent);
+    }
+
+    public void insertStudent(Student student) {
+        this.students.put(student.getId(), student);
     }
 }

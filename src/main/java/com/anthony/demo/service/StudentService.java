@@ -22,6 +22,8 @@ public class StudentService {
 
     public void updateStudent(Student student){ this.studentData.updateStudent(student); }
 
+    public void insertStudent(Student student) { this.studentData.insertStudent(student); }
+
     //@add an if student.id exists statements to all
 
 }
