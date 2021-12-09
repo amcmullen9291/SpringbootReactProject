@@ -16,4 +16,9 @@ public class StudentService {
         return studentData.getAllStudents();
     };
 
+    public Student getStudentById(int id){ return this.studentData.getStudentById(id); }
+
+    public void deleteStudentById(int id) { this.studentData.deleteStudentById(id); }
+    //@add an if student.id exists statements to all
+
 }
